@@ -139,13 +139,14 @@ table {
   font-weight: 400;
   font-style: normal;
   color: black;
+  font-size: 1.5em;
 }
 
 header {
   background-color: #dacfc0;
 }
 
-nav ul {
+nav {
   background-color: #142e21;
 
   a:link,
@@ -180,10 +181,108 @@ img {
   }
 }
 
-body {
+/* allt genomgående */
+html,
+button {
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: normal;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-top: 0.3em;
+  text-align: center;
+}
+
+p {
+  padding: 0.5em 1.5em;
+}
+
+/* text på bilden */
+
+.hero-text {
+  background-color: #dacfc0;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+
+  button {
+    background-color: #dacfc0;
+    border-color: black;
+    padding: 1em 1em;
+    margin: 0.5em;
+    margin-bottom: 2em;
+    font-weight: bold;
+  }
+}
+
+/* main */
+
+.main-container {
+  color: #fcd8a7;
+  background-color: #142e21;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 1em 0;
+}
+
+/* bildkort */
+.image-cards {
+  background-color: #dacfc0;
+  padding: 1em 3em;
+
+  h2 {
+    padding-bottom: 1em;
+  }
+
+  h3 {
+    font-weight: bold;
+    padding: 0.5em 2em;
+  }
+
+  div {
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  img {
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  p {
+    margin-bottom: 1em;
+    padding: 0.5em 2em 1em 2em;
+    line-height: 1.2;
+  }
+}
+
+.main-slut {
+  color: #fcd8a7;
+  background-color: #142e21;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+
+  h2 {
+    padding-top: 1em;
+  }
+
+  p {
+    text-align: left;
+    padding: 1em 2em;
+  }
+  button {
+    color: #fcd8a7;
+    background-color: #142e21;
+    padding: 1em 1em;
+    margin: 0.5em;
+    margin-bottom: 2em;
+    font-weight: bold;
+    border-color: #fcd8a7;
+  }
 }
