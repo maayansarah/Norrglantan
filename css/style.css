@@ -213,7 +213,7 @@ p {
   button {
     background-color: #dacfc0;
     border-color: black;
-    padding: 1em 1em;
+    padding: 1em 3em;
     margin: 0.5em;
     margin-bottom: 2em;
     font-weight: bold;
@@ -234,7 +234,7 @@ p {
 /* bildkort */
 .image-cards {
   background-color: #dacfc0;
-  padding: 1em 3em;
+  padding: 1em 2.5em;
 
   h2 {
     padding-bottom: 1em;
@@ -242,7 +242,7 @@ p {
 
   h3 {
     font-weight: bold;
-    padding: 0.5em 2em;
+    padding: 0.5em 1.1em;
   }
 
   div {
@@ -256,7 +256,7 @@ p {
 
   p {
     margin-bottom: 1em;
-    padding: 0.5em 2em 1em 2em;
+    padding: 0.5em 1.1em 1em 1.1em;
     line-height: 1.2;
   }
 }
@@ -279,10 +279,80 @@ p {
   button {
     color: #fcd8a7;
     background-color: #142e21;
-    padding: 1em 1em;
+    padding: 1em 4em;
     margin: 0.5em;
     margin-bottom: 2em;
     font-weight: bold;
     border-color: #fcd8a7;
+  }
+}
+
+/* footer */
+
+/* Norrgläntan rad */
+.text-display-end {
+  font-family: "Oldenburg", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fcd8a7;
+  font-size: 1.2em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+/* text */
+.footer-container {
+  color: white;
+  background-color: #121815;
+
+  p {
+    padding-top: 0.5em;
+    padding-bottom: 2.5em;
+  }
+
+  h3 {
+    color: #fcd8a7;
+    text-align: left;
+  }
+
+  /* loggan */
+  img {
+    max-width: 80px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding: 2em;
+
+  /* länkarna */
+  a:link,
+  a:visited {
+    color: white;
+  }
+
+  ul li {
+    padding: 0.3em 0em;
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  column-gap: 3em;
+
+  .footer-columns .footer-column:last-child {
+    text-align: right;
+  }
+
+  .footer-columns .footer-column:first-child {
+    text-align: left;
   }
 }
