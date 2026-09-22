@@ -61,57 +61,73 @@
         <h2>Upplev Norrgläntan</h2>
         <!-- bildkort -->
 
-        <div>
-          <img src="images/vandra.jpg" alt="Bild på vandringsled" />
-          <h3>Vandra</h3>
-          <p>
-            Följ leder genom skog och över öppna höjder. Här finns vandringar
-            för både korta utflykter och längre dagar ute i naturen.
-          </p>
-        </div>
+        <div class="cards-container">
+          <div class="card">
+            <img src="images/vandra.jpg" alt="Bild på vandringsled" />
+            <h3>Vandra</h3>
+            <p>
+              Följ leder genom skog och över öppna höjder. Här finns vandringar
+              för både korta utflykter och längre dagar ute i naturen.
+            </p>
+          </div>
 
-        <div>
-          <img src="images/paddla.jpg" alt="Bild på person som paddlar kajak" />
-          <h3>Paddla</h3>
-          <p>
-            Ta dig ut på Norrgläntans sjöar och upptäck landskapet från vattnet.
-            Hitta din egen vik eller stanna till vid någon av rastplatserna
-            längs stranden.
-          </p>
-        </div>
+          <div class="card">
+            <img
+              src="images/paddla.jpg"
+              alt="Bild på person som paddlar kajak"
+            />
+            <h3>Paddla</h3>
+            <p>
+              Ta dig ut på Norrgläntans sjöar och upptäck landskapet från
+              vattnet. Hitta din egen vik eller stanna till vid någon av
+              rastplatserna längs stranden.
+            </p>
+          </div>
 
-        <div>
-          <img src="images/upptack.jpg" alt="Bild på person vid utsiktsplats" />
-          <h3>Upptäck</h3>
-          <p>
-            Ibland är det bästa äventyret det som inte är planerat. Utforska
-            skogar och utsiktsplatser och upptäck dina egna favoriter längs
-            vägen.
-          </p>
+          <div class="card">
+            <img
+              src="images/upptack.jpg"
+              alt="Bild på person vid utsiktsplats"
+            />
+            <h3>Upptäck</h3>
+            <p>
+              Ibland är det bästa äventyret det som inte är planerat. Utforska
+              skogar och utsiktsplatser och upptäck dina egna favoriter längs
+              vägen.
+            </p>
+          </div>
         </div>
-
-        <!-- slut på bildkort -->
       </section>
+      <!-- slut på bildkort -->
 
       <section class="main-slut">
-        <h2>Planera ditt besök</h2>
-        <p>
-          Norrgläntan har något att erbjuda under hela året. Här hittar du
-          boenden nära naturen och bra utgångspunkter för områdets aktiviteter.
-          Börja planera ditt besök och hitta det som passar dig.
-        </p>
-        <button>Planera ditt besök</button>
+        <div class="plan-del">
+          <h2>Planera ditt besök</h2>
+          <p>
+            Norrgläntan har något att erbjuda under hela året. Här hittar du
+            boenden nära naturen och bra utgångspunkter för områdets
+            aktiviteter. Börja planera ditt besök och hitta det som passar dig.
+          </p>
+        </div>
+
+        <div class="plan-del">
+          <button>Planera ditt besök</button>
+        </div>
       </section>
     </main>
 
     <footer class="footer-container">
-      <a href="index.html"
-        ><img src="images/logotyp_vit.png" alt="Norrgläntans logotyp"
-      /></a>
-      <h2 class="text-display-end">Norrgläntan</h2>
-      <p>Naturupplevelser året runt</p>
+      <div class="footer-logo">
+        <a href="index.html"
+          ><img src="images/logotyp_vit.png" alt="Norrgläntans logotyp"
+        /></a>
+        <div class="text-group">
+          <h2 class="text-display-end">Norrgläntan</h2>
+          <p>Naturupplevelser året runt</p>
+        </div>
+      </div>
 
-      <section class="footer-columns">
+      <div class="footer-columns">
         <div class="footer-column">
           <h3>Kontakt</h3>
           <ul>
@@ -133,7 +149,7 @@
             <li><a href="#">Hitta hit</a></li>
           </ul>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

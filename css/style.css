@@ -225,7 +225,7 @@ p {
 .main-container {
   color: #fcd8a7;
   background-color: #142e21;
-  text-align: center;
+  text-align: left;
   font-size: 1em;
   line-height: 1.5;
   padding: 1em 0;
@@ -245,9 +245,10 @@ p {
     padding: 0.5em 1.1em;
   }
 
-  div {
+  .card {
     background-color: white;
     border-radius: 8px;
+    margin-bottom: 1em;
   }
 
   img {
@@ -255,11 +256,12 @@ p {
   }
 
   p {
-    margin-bottom: 1em;
     padding: 0.5em 1.1em 1em 1.1em;
     line-height: 1.2;
   }
 }
+
+/* sista main */
 
 .main-slut {
   color: #fcd8a7;
@@ -297,7 +299,6 @@ p {
   color: #fcd8a7;
   font-size: 1.2em;
   padding: 0.5em;
-  text-align: center;
 }
 
 /* text */
@@ -317,7 +318,7 @@ p {
 
   /* loggan */
   img {
-    max-width: 80px;
+    max-width: 100px;
   }
 
   display: flex;
@@ -347,12 +348,122 @@ p {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   column-gap: 3em;
+}
 
-  .footer-columns .footer-column:last-child {
-    text-align: right;
+/* desktop */
+
+@media (width > 500px) {
+  header,
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5em 3em;
+    justify-content: space-between;
   }
 
-  .footer-columns .footer-column:first-child {
+  nav {
+    background-color: unset;
+
+    a:link,
+    a:visited {
+      color: black;
+    }
+    li {
+      border: 0;
+      padding: 1em;
+    }
+  }
+
+  /* Lägg in hero text för desktop här */
+
+  .main-container {
+    padding: 2vw 30vw;
+  }
+
+  .image-cards {
+    padding-top: 2em;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    margin: 1em 2em 2em;
+
+    .card {
+      flex-basis: 33.333%;
+    }
+  }
+
+  .main-slut {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+    padding: 2vw 8vw;
+
+    p {
+      padding: 0em;
+    }
+
+    .plan-del {
+      max-width: 400px;
+    }
+    h2 {
+      text-align: left;
+      padding-top: 0em;
+    }
+  }
+
+  /* footer */
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5em 10em;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     text-align: left;
+    gap: 1.5rem;
+    padding: 0;
+
+    img {
+      margin-top: -1.5rem;
+    }
+  }
+
+  .text-group h2,
+  .text-group p {
+    margin: 0;
+    text-align: left;
+    padding: 0em 2em 0em 0em;
+    min-width: 260px;
+  }
+
+  .text-group h2 {
+    margin-bottom: 0.25em;
+  }
+
+  .footer-columns {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 10em;
+  }
+
+  .footer-column,
+  .footer-column ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
   }
 }
