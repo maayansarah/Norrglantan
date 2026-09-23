@@ -222,7 +222,7 @@ p {
     cursor: pointer;
   }
 
-  image {
+  img {
     object-fit: cover;
   }
 }
@@ -327,6 +327,7 @@ p {
   /* loggan */
   img {
     max-width: 100px;
+    margin: 0 auto;
   }
 
   display: flex;
@@ -366,7 +367,7 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.5em 3em;
+    padding: 0.5em 1em;
     justify-content: space-between;
   }
 
@@ -429,9 +430,10 @@ p {
     flex-direction: row;
     gap: 5em;
     margin: 1em 2em 2em;
+    justify-content: space-evenly;
 
     .card {
-      flex-basis: 33.333%;
+      width: 40ch;
     }
   }
 
@@ -454,6 +456,10 @@ p {
       text-align: left;
       padding-top: 0em;
     }
+
+    button {
+      margin: 0;
+    }
   }
 
   /* footer */
@@ -461,9 +467,8 @@ p {
   .footer-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding: 5em 10em;
+    justify-content: space-between;
+    padding: 5rem 5rem;
   }
 
   .footer-logo {
@@ -473,6 +478,7 @@ p {
     text-align: left;
     gap: 1.5rem;
     padding: 0;
+    flex-basis: 50vw;
 
     img {
       margin-top: -1.5rem;
@@ -484,7 +490,6 @@ p {
     margin: 0;
     text-align: left;
     padding: 0em 2em 0em 0em;
-    min-width: 260px;
   }
 
   .text-group h2 {
@@ -495,7 +500,7 @@ p {
     display: flex;
     flex-direction: row;
     padding: 0;
-    gap: 5em;
+    justify-content: space-between;
   }
 
   .footer-column,
