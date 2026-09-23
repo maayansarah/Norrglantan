@@ -166,6 +166,7 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 .logo-container {
@@ -209,14 +210,20 @@ p {
   text-align: center;
   font-size: 1em;
   line-height: 1.5;
+  position: relative;
 
   button {
     background-color: #dacfc0;
-    border-color: black;
+    border: 1px solid black;
     padding: 1em 3em;
     margin: 0.5em;
     margin-bottom: 2em;
     font-weight: bold;
+    cursor: pointer;
+  }
+
+  image {
+    object-fit: cover;
   }
 }
 
@@ -285,7 +292,8 @@ p {
     margin: 0.5em;
     margin-bottom: 2em;
     font-weight: bold;
-    border-color: #fcd8a7;
+    border: 1px solid #fcd8a7;
+    cursor: pointer;
   }
 }
 
@@ -345,14 +353,14 @@ p {
 
 .footer-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
   width: 100%;
-  column-gap: 3em;
+  column-gap: 1em;
 }
 
 /* desktop */
 
-@media (width > 500px) {
+@media (width > 768px) {
   header,
   ul {
     display: flex;
@@ -375,7 +383,38 @@ p {
     }
   }
 
-  /* Lägg in hero text för desktop här */
+  /* hero text */
+
+  .hero-desktop {
+    display: block;
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    transform: translateY(50%);
+
+    color: #dacfc0;
+    z-index: 1;
+    padding: 0;
+
+    h2 {
+      text-align: left;
+      max-width: 30ch;
+    }
+
+    p {
+      text-align: left;
+      padding: 0em 3em 1em 0em;
+      max-width: 30ch;
+    }
+
+    button {
+      background-color: transparent;
+      color: #dacfc0;
+      border: 1px solid #fff0da;
+      margin: 0em;
+      display: block;
+    }
+  }
 
   .main-container {
     padding: 2vw 30vw;
@@ -422,7 +461,7 @@ p {
   .footer-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     padding: 5em 10em;
   }
@@ -456,7 +495,7 @@ p {
     display: flex;
     flex-direction: row;
     padding: 0;
-    gap: 10em;
+    gap: 5em;
   }
 
   .footer-column,
